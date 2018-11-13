@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>deleteFiles</title>
+</head>
+
+<body>
+    <h2>deleteFiles</h2>
+    <form action="/delFiles" method="GET" enctype="multipart/form-data">
+        <select name="dirname" id="dirname">
+                <%for(var i=0;i<dirList.length;i++){%>
+                        <option value="<%=dirList[i]%>"><%=dirList[i]%></option>
+                    <%}%>
+            </select>
+        <button type="submit">delete</button>
+    </form>
+</body>
+<script src="/js/jquery-1.12.4.js"></script>
+<script>
+    
+</script>
+</html>
